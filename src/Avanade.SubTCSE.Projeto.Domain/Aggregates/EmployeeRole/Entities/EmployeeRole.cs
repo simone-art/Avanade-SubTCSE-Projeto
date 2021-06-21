@@ -6,9 +6,24 @@ using System.Threading.Tasks;
 
 namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Entities
 {
-    public class EmployeeRole
-    {
-        public string Id { get; private set; }
-        public string Rolename { get; private set; }
+    //Record garante que as propiedades nao vai ser alteradas
+    public record EmployeeRole
+    {  
+        
+        //Constructor com parámetros
+        public EmployeeRole(string id, string roleName)
+        {
+            Id = id;
+            Rolename = roleName;
+        }
+
+        public EmployeeRole(string rolename)
+        {
+            Rolename = rolename;
+        }
+
+        //O Init só quem seta o valor é o constructor
+        public string Id { get; init; }
+        public string Rolename { get; init; }
     }
 }

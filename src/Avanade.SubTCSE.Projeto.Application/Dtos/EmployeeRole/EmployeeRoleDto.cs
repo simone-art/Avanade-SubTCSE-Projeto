@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Avanade.SubTCSE.Projeto.Application.Dtos.EmployeeRole
 {
-    class EmployeeRoleDto
+   public  class EmployeeRoleDto
     {
+        public string Identificador { get; set; }
+        public string Cargo{ get; set; }
     }
 }
