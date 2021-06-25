@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Entities
 {
     //Record garante que as propiedades nao vai ser alteradas
-    public record EmployeeRole
+    public record EmployeeRole : BaseEntity<string>
     {  
         
         //Constructor com parámetros
@@ -23,7 +23,7 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Entities
         }
 
         //O Init só quem seta o valor é o constructor
-        public string Id { get; init; }
+        //public string Id { get; init; }
         public string Rolename { get; init; }
     }
 }
