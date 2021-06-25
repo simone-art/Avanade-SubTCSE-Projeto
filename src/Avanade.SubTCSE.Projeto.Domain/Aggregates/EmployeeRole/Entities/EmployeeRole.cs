@@ -8,22 +8,25 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Entities
 {
     //Record garante que as propiedades nao vai ser alteradas
     public record EmployeeRole : BaseEntity<string>
-    {  
+    {
         
-        //Constructor com parámetros
-        public EmployeeRole(string id, string roleName)
-        {
-            Id = id;
-            Rolename = roleName;
-        }
+            //Constructor com parámetros
+            public EmployeeRole(string id, string roleName)
+            {
+                Id = id;
+                RoleName = roleName;
+            }
 
-        public EmployeeRole(string rolename)
-        {
-            Rolename = rolename;
-        }
 
-        //O Init só quem seta o valor é o constructor
-        //public string Id { get; init; }
-        public string Rolename { get; init; }
+            public EmployeeRole(string roleName)
+            {
+                RoleName = roleName;
+            }
+
+            //O Init só quem seta o valor é o constructor
+            //public string Id { get; init; }
+            public string RoleName { get; init; }
+        }
     }
-}
+
+

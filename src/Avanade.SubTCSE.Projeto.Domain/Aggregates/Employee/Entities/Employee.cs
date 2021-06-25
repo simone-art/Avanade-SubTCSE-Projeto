@@ -8,7 +8,12 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Entities
 {
     public record Employee : BaseEntity<string>
     {
-        public Employee(string firstName, string secondName, DateTime birthday, bool active, decimal salary, EmployeeRole.Entities.EmployeeRole employeeRole)
+        public Employee(string firstName, 
+            string secondName, 
+            DateTime birthday, 
+            bool active, 
+            decimal salary, 
+            EmployeeRole.Entities.EmployeeRole employeeRole)
         {
             FirstName = firstName;
             SecondName = secondName;

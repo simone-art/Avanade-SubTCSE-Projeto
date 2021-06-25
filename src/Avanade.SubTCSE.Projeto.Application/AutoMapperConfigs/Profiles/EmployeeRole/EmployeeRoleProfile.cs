@@ -14,13 +14,13 @@ namespace Avanade.SubTCSE.Projeto.Application.AutoMapperConfigs.Profiles.Employe
         {
             //Fazendo mapeamento origem-destino
             //Dtos.EmployeeRole.EmployeeRoleDto {origem}
-            //Domain.Aggregates.EmployeeRole.Entities.EmployeeRol {destino}
+            //Domain.Aggregates.EmployeeRole.Entities.EmployeeRole {destino}
             CreateMap<Dtos.EmployeeRole.EmployeeRoleDto, Domain.Aggregates.EmployeeRole.Entities.EmployeeRole>()
-            .ForCtorParam("rolename", opt => opt.MapFrom(src => src.Cargo));
+            .ForCtorParam("roleName", opt => opt.MapFrom(src => src.Cargo));
 
             CreateMap<Domain.Aggregates.EmployeeRole.Entities.EmployeeRole, Dtos.EmployeeRole.EmployeeRoleDto>()
                 .ForMember(dest => dest.Identificador, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.Cargo, opt => opt.MapFrom(src => src.Rolename))
+                .ForMember(dest => dest.Cargo, opt => opt.MapFrom(src => src.RoleName))
                 .ForAllOtherMembers(i => i.Ignore());
 
 
