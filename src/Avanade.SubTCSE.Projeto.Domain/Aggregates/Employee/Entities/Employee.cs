@@ -8,6 +8,8 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Entities
 {
     public record Employee : BaseEntity<string>
     {
+
+
         public string FirstName { get; set; }
 
         public string SecondName { get; set; }
@@ -18,7 +20,7 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Entities
 
         public decimal Salary { get; set; }
 
-        public EmployeeRole.Entities.EmployeeRole EmployeeRole { get; set; }
+        public EmployeeRole.Entities.EmployeeRole EmployeeRole { get; init; }
 
 
     }
