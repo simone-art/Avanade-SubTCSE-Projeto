@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Entities
 {
-    class Employee
+    public class Employee
     {
     }
 }
