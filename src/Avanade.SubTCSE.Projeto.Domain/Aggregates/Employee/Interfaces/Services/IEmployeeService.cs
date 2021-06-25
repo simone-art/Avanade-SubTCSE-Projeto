@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Interfaces.Services
 {
-    interface Interface1
+    public interface IEmployeeService
     {
+        Task<Entities.Employee> AddEmployee(Entities.Employee employee);
     }
 }
