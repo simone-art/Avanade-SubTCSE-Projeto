@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Avanade.SubTCSE.Projeto.Application.Interfaces.EmployeeRole
 {
-    interface IEmployeeRoleAppService
+    public interface IEmployeeRoleAppService
     {
         //Task: tarefas que retornan instancias de objetos
         Task<EmployeeRoleDto> AddeEmployeeRoleDto(EmployeeRoleDto employeeRoleDto);
