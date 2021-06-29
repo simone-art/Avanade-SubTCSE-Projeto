@@ -9,6 +9,7 @@ namespace Avanade.SubTCSE.Projeto.Application.Interfaces.EmployeeRole
 {
     interface IEmployeeRoleAppService
     {
-        void AddEmployeeRole(EmployeeRoleDto employeeRoleDto);
+        //Task: tarefas que retornan instancias de objetos
+        Task<EmployeeRoleDto> AddeEmployeeRoleDto(EmployeeRoleDto employeeRoleDto);
     }
 }

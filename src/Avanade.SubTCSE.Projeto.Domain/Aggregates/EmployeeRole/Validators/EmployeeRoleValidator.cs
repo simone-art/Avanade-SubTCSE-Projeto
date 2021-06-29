@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Validators
 {
-    public class EmployeeRoleValidator : AbstractValidator<Entities.Employee>
+    public class EmployeeRoleValidator : AbstractValidator<Entities.EmployeeRole>
     {
         public EmployeeRoleValidator()
         {
