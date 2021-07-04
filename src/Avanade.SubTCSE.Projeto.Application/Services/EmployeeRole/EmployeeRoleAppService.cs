@@ -9,7 +9,7 @@ namespace Avanade.SubTCSE.Projeto.Application.Services.EmployeeRole
     {
         public Task<EmployeeRoleDto> AddEmployeeRoleDto(EmployeeRoleDto employeeRoleDto)
         {
-            //throw new System.NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
 }
