@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Avanade.SubTCSE.Projeto.Domain.Base.Repository
 {
-    interface IBaseRepository
+    public interface IBaseRepository<TEntity>
     {
+        Task<TEntity> Add(TEntity entity);
     }
 }
