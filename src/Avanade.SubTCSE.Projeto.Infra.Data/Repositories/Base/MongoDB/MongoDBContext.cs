@@ -7,8 +7,7 @@ namespace Avanade.SubTCSE.Projeto.Infra.Data.Repositories.Base.MongoDB
     {
         private readonly IMongoDatabase _mongoDatabase;
         public MongoDBContext()
-        {
-           
+        {           
             MongoClientSettings mongoClientSettings = MongoClientSettings
                 .FromUrl(new MongoUrl(""));
 
@@ -22,7 +21,6 @@ namespace Avanade.SubTCSE.Projeto.Infra.Data.Repositories.Base.MongoDB
             MongoClient mongoClient = new MongoClient(settings: mongoClientSettings);
             _mongoDatabase = mongoClient.GetDatabase("");
         }
-
 
         public IMongoCollection<TEntity> GetCollection<TEntity>(string collection)
         {
